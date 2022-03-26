@@ -1,0 +1,163 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Indie+Flower&family=Poor+Story&family=Roboto:wght@100;300;400&display=swap');
+
+/*font-family*/
+/*font-family: 'Gowun Dodum', sans-serif;*/
+/*font-family: 'Indie Flower', cursive;*/
+/*font-family: 'Poor Story', cursive;*/
+/*font-family: 'Roboto', sans-serif;*/
+
+:root{
+    /*Color*/
+    --main-color : #FFE175;
+    --back-light-color : #fae9a9;
+    --back-max-light-color : rgba(255, 184, 0, 0.39);
+    --grey-dark-color:#909090;
+    --grey-light-color:#e0e0e0;
+
+
+    /*Size*/
+    --padding : 12px;
+
+
+    /*font-Name*/
+    --font-gowun : 'Gowun Dodum', sans-serif;
+    --font-flower : 'Indie Flower', cursive;
+    --font-story : 'Poor Story', cursive;
+    --font-roboto : 'Roboto', sans-serif;
+
+    /*font-Size*/
+    --font-large : 20px;
+    --font-medium : 14px;
+    --font-small : 12px;
+    --font-micro : 10px;
+
+}
+
+body{
+    font-family:var(--font-story);
+}
+
+
+/*header*/
+header {
+    display: flex;
+    margin-top:15px;
+    height:35px;
+    border-bottom:2px solid var(--grey-light-color);
+}
+
+header .title {
+    font-family:var(--font-flower);
+    font-size: var(--font-large);
+    margin-right:20px;
+    margin-left : 20px;
+}
+
+header .search{
+    display: flex;
+    background-color:var(--main-color);
+    width:185px;
+    height : 22px;
+    border-radius:20px;
+    margin-right:20px;
+}
+
+header .search .search-icon {
+    margin-left:37px;
+    margin-top:2px;
+}
+
+header .search .search-text {
+    font-size: var(--font-small);
+    color: white;
+    margin-top:5px;
+    margin-left: 20px;
+}
+
+
+header .my-page img{
+    height:35px;
+    margin-top: -7px;
+}
+
+
+/*nav-bar Style*/
+nav ul{
+    display: flex;
+}
+
+nav ul li {
+    margin-right:20px;
+    list-style: none;
+}
+
+nav .nav-text{
+    margin-right:20px;
+    margin-left:5px;
+    margin-top:-15px;
+    align-items:center;
+    flex-basis:auto;
+}
+
+nav .nav-img img{
+    margin-left:5px;
+    margin-right:25px;
+}
+
+
+/*ChiceAddress Style*/
+.choiceAddress {
+    height:30px;
+    display: flex;
+    margin-left:20px;
+    margin-right:20px;
+    border : 2px solid var(--main-color);
+    border-radius:20px;
+}
+
+.choiceAddress .addressDetail,
+.choiceAddress .logo{
+    margin-left : 14px;
+    margin-top: 6px;
+}
+
+.choiceAddress .setting{
+    display: flex;
+    margin-left:130px;
+    margin-top: 6px;
+
+}
+
+
+/*latest-Post Style*/
+.latest-post .title,
+.latest-post .post-nav{
+    margin-top:20px;
+    margin-left:30px;
+}
+
+.latest-post .post-nav{
+    margin-left:280px;
+    margin-top:-20px;
+    border : 2px solid var(--main-color);
+    border-radius:20px;
+    margin-right:20px;
+}
+.latest-post .post-list ul{
+    /*flex-direction: row;*/
+    display:grid;
+    grid-template-areas: ' myArea . ';
+}
+
+.latest-post .post-list ul li .area,
+.latest-post .post-list ul li .title{
+    display:grid;
+}
+
+.latest-post .post-list ul li .post-img{
+    width:150px;
+    height:100px;
+    /*flex-wrap: wrap;*/
+    /*flex:auto;*/
+}
