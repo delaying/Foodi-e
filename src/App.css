@@ -51,20 +51,20 @@ header .title {
     font-family:var(--font-flower);
     font-size: var(--font-large);
     margin-right:20px;
-    margin-left : 20px;
+    margin-left : 30px;
 }
 
 header .search{
     display: flex;
     background-color:var(--main-color);
-    width:185px;
+    width:190px;
     height : 22px;
     border-radius:20px;
     margin-right:20px;
 }
 
 header .search .search-icon {
-    margin-left:37px;
+    margin-left:40px;
     margin-top:2px;
 }
 
@@ -126,7 +126,10 @@ nav .nav-img img{
     display: flex;
     margin-left:130px;
     margin-top: 6px;
+}
 
+.choiceAddress .setting .settingIcon{
+    margin-right:10px;
 }
 
 
@@ -138,26 +141,54 @@ nav .nav-img img{
 }
 
 .latest-post .post-nav{
+    display: flex;
     margin-left:280px;
     margin-top:-20px;
     border : 2px solid var(--main-color);
     border-radius:20px;
     margin-right:20px;
 }
+
+.latest-post .post-nav .post-nav-text{
+    margin-left:20px;
+}
+
+
 .latest-post .post-list ul{
     /*flex-direction: row;*/
     display:grid;
     grid-template-areas: ' myArea . ';
+    font-size:var(--font-small);
+    list-style:none;
 }
 
-.latest-post .post-list ul li .area,
 .latest-post .post-list ul li .title{
-    display:grid;
+    margin-left:0;
 }
+
+.latest-post .post-list ul li .userNickname{
+    margin-left:65px;
+}
+
 
 .latest-post .post-list ul li .post-img{
     width:150px;
     height:100px;
+    border-radius:5px;
     /*flex-wrap: wrap;*/
     /*flex:auto;*/
+}
+
+.latest-post .addPost{
+    text-align:center;
+    margin-right:30px;
+    margin-left:30px;
+}
+
+.latest-post .addPost button{
+    width:100%;
+    background-color:var(--grey-light-color);
+    border:none;
+    height:25px;
+    border-radius:10px;
 }
