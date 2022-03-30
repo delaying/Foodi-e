@@ -15,8 +15,6 @@ import {PostHeader} from './component/PostHeaderComponent';
 
 
 
-
-
 function App() {
     return (
         <div className="App">

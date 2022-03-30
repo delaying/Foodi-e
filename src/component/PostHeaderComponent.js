@@ -6,13 +6,13 @@ import React from "react";
 
 import Main from '../App.js';
 
-function PostHeader(){
+function PostHeader(props){
     return(
         <header className="post-header">
             <div className="post-icon">
                 <link to="" > <img src={freeIcon} alt=""/> </link>
             </div>
-            <div className="post-title">나눔 게시판</div>
+            <div className="post-title">{'title-name'} 게시판</div>
             <div className="post-dropdown-icon">
                 <RiArrowDropDownLine/>
             </div>
