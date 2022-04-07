@@ -3,22 +3,27 @@ import changeIcon from "../img/changeIcon.svg";
 import partyIcon from "../img/partyIcon.svg";
 import recipeIcon from "../img/recipeIcon.svg";
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 function Nav(){
+    const data = "나눔";
     return(
         <nav>
             <ul className="nav-img">
                 <li className="free">
-                    <a href="./PostComponent.js"><img src={freeIcon} alt=""/></a>
+                    <Link to={{
+                        pathname:"/post/free",
+                        state:{data}}}><img src={freeIcon} alt=""/></Link>
                 </li>
                 <li className="change">
-                    <img src={changeIcon} alt=""/>
+                    <Link to="/post/change"><img src={changeIcon} alt=""/></Link>
                 </li>
                 <li className="party">
-                    <img src={partyIcon} alt=""/>
+                    <Link to="/post/party"><img src={partyIcon} alt=""/></Link>
                 </li>
                 <li className="recipe">
-                    <img src={recipeIcon} alt=""/>
+                    <Link to="/post/party"><img src={recipeIcon} alt=""/></Link>
                 </li>
             </ul>
 
