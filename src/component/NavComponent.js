@@ -11,19 +11,19 @@ function Nav(){
     return(
         <nav>
             <ul className="nav-img">
-                <li className="free">
+                <li className="free nav-icon">
                     <Link to={{
                         pathname:"/post/free",
                         state:{data}}}><img src={freeIcon} alt=""/></Link>
                 </li>
-                <li className="change">
+                <li className="change nav-icon" >
                     <Link to="/post/change"><img src={changeIcon} alt=""/></Link>
                 </li>
-                <li className="party">
+                <li className="party nav-icon">
                     <Link to="/post/party"><img src={partyIcon} alt=""/></Link>
                 </li>
-                <li className="recipe">
-                    <Link to="/post/party"><img src={recipeIcon} alt=""/></Link>
+                <li className="recipe nav-icon">
+                    <Link to="/post/recipe"><img src={recipeIcon} alt=""/></Link>
                 </li>
             </ul>
 

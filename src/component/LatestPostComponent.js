@@ -1,5 +1,6 @@
 import React from "react";
 import {RiArrowDropDownLine} from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 
 function LatestPost(){
@@ -51,7 +52,9 @@ function LatestPost(){
                 </ul>
             </div>
             <div className="addPost">
-                <button><a href="">더보기</a></button>
+                <Link to='/post/free'>
+                    <button><a href="">더보기</a></button>
+                </Link>
             </div>
         </section>
     )

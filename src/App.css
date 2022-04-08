@@ -93,17 +93,28 @@ nav ul li {
 }
 
 nav .nav-text{
-    margin-right:20px;
-    margin-left:5px;
-    margin-top:-15px;
-    align-items:center;
+    display: flex;
+    justify-content:space-around;
+    margin-right:10px;
+    margin-left:4px;
+    margin-top:-10px;
     flex-basis:auto;
 }
 
-nav .nav-img img{
+nav .nav-img {
+    display: flex;
+    justify-content:space-around;
     margin-left:5px;
     margin-right:25px;
 }
+
+/*nav icon 배경*/
+/*nav .nav-icon{*/
+/*    height:50px;*/
+/*    width:50px;*/
+/*    background-color: #fff9f0;*/
+/*    border-radius:20px;*/
+/*}*/
 
 
 /*ChiceAddress Style*/
@@ -160,6 +171,7 @@ nav .nav-img img{
     grid-template-areas: ' myArea . ';
     font-size:var(--font-small);
     list-style:none;
+
 }
 
 .latest-post .post-list ul li .title{
@@ -175,6 +187,7 @@ nav .nav-img img{
     width:150px;
     height:100px;
     border-radius:5px;
+
     /*flex-wrap: wrap;*/
     /*flex:auto;*/
 }
@@ -191,4 +204,9 @@ nav .nav-img img{
     border:none;
     height:25px;
     border-radius:10px;
+}
+
+.latest-post .addPost a{
+    text-decoration:none;
+    color: #3b3b3b;
 }

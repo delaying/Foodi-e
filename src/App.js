@@ -7,20 +7,20 @@ import Login from "./routes/Login";
 
 function App() {
     return (
-            <Router>
-                <Switch>
-                    <Route path="/login">
-                        <Login/>
-                    </Route>
-                    <Route path="/post">
-                        <Board/>
-                    </Route>
-                    <Route path="/">
-                        <Home/>
-                    </Route>
+        <Router>
+            <Switch>
+                <Route path="/login">
+                    <Login/>
+                </Route>
+                <Route path="/post">
+                    <Board/>
+                </Route>
+                <Route path="/">
+                    <Home/>
+                </Route>
 
-                </Switch>
-            </Router>
+            </Switch>
+        </Router>
     );
 }
 
