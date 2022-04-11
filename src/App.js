@@ -12,7 +12,7 @@ function App() {
                 <Route path="/login">
                     <Login/>
                 </Route>
-                <Route path="/post">
+                <Route path="/post/:name">
                     <Board/>
                 </Route>
                 <Route path="/">

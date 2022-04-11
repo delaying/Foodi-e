@@ -187,10 +187,8 @@ nav .nav-img {
     width:150px;
     height:100px;
     border-radius:5px;
-
-    /*flex-wrap: wrap;*/
-    /*flex:auto;*/
 }
+
 
 .latest-post .addPost{
     text-align:center;

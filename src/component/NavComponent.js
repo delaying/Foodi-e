@@ -12,9 +12,7 @@ function Nav(){
         <nav>
             <ul className="nav-img">
                 <li className="free nav-icon">
-                    <Link to={{
-                        pathname:"/post/free",
-                        state:{data}}}><img src={freeIcon} alt=""/></Link>
+                    <Link to={{pathname:`/post/free`}}><img src={freeIcon} alt=""/></Link>
                 </li>
                 <li className="change nav-icon" >
                     <Link to="/post/change"><img src={changeIcon} alt=""/></Link>
