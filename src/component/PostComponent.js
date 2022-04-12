@@ -19,7 +19,7 @@ function Post() {
     let name = '나눔';
     let icon = freeIcon;
     const data = useLocation().pathname;
-    console.log(data);
+
     if (data == '/post/free') {
         name = '나눔';
         icon = freeIcon;
@@ -87,12 +87,14 @@ function Post() {
 
             </div>
 
+            <Link to={{pathname:`${data}/write`}}>
             <div className="writePost" style={writeStyle}>
                 <span className="write-icon">
                     <TiPencil/>
                 </span>
                 <span className="write-text">글쓰기</span>
             </div>
+            </Link>
         </div>
 
     )
