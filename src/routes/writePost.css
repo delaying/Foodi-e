@@ -1,0 +1,71 @@
+.header-button {
+  background-color:white;
+  width:68px;
+  height:24px;
+  text-align:center;
+  border:1.5px solid #FFE175;
+  border-radius:30px;
+}
+
+.post-title{
+ background-color:#FFE175;
+ width:100%;
+ height:45px;
+}
+
+.post-title-option{
+    display: inline-block;
+     color: #8f8f8f;
+     height:24px;
+     width:370px;
+     background-color:white;
+     padding:3px;
+     border-radius:20px;
+     text-align:center;
+    /*중앙으로 옮기기 ㅜㅜ*/
+    vertical-align: middle;
+}
+
+.post-category{
+    display: block;
+    margin-left:20px;
+}
+
+.post-photo{
+    background-color: #FFE175;
+    width:100%;
+    height:200px;
+}
+
+.post-photo .add-photo{
+    background-color:white;
+    width:200px;
+    height:170px;
+    border: 1.5px solid #bebebe;
+    border-radius:20px;
+    color: #949494;
+    text-align:center;
+}
+
+.post-content{
+    background-color: #efefef;
+    width:360px;
+    height:180px;
+    margin:20px;
+    border-radius:20px;
+}
+.post-content p{
+    color: #494949;
+    display: inline-block;
+    /*text-align:center;*/
+    vertical-align: middle;
+}
+
+.post-precations{
+    color:#494949;
+    display: inline-block;
+}
+
+.post-precations .check-agree{
+    text-align:center;
+}

@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Board from "./routes/Board";
 import Home from "./routes/Home";
 import Login from "./routes/Login";
+import WritePost from "./routes/WritePost";
 
 function App() {
     return (
@@ -11,6 +12,9 @@ function App() {
             <Switch>
                 <Route path="/login">
                     <Login/>
+                </Route>
+                <Route path="/post/:name/write">
+                    <WritePost/>
                 </Route>
                 <Route path="/post/:name">
                     <Board/>
