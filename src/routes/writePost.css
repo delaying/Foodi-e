@@ -4,9 +4,10 @@
     display: inline-block;
     margin-left: 25px;
 }
-.header .prev-arrow,
+
 .header .header-content{
-    margin-right:70px;
+    margin-right:50px;
+    margin-left:80px;
 }
 
 

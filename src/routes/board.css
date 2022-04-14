@@ -1,0 +1,108 @@
+body{
+    font-size:14px;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.post-header{
+    display: flex;
+    margin: 10px 10px 10px 0;
+    font-size: 16px;
+}
+.post-header img{
+    height:30px;
+    margin-left:20px;
+}
+.post-header h4{
+    margin-top:8px;
+    margin-left:7px;
+    margin-right:10px;
+}
+
+.post-header .header-drop-icon{
+    margin-top:3px;
+}
+.post-header .header-search-icon{
+    margin-left:120px;
+    margin-right:5px;
+    margin-top:8px;
+}
+.post-header .header-main-img img {
+    height:32px;
+}
+
+.choice-area{
+    display: flex;
+    margin: -15px 10px 10px 0;
+    text-align: right;
+    height: 20px;
+    padding:10px;
+    width:100%;
+    background-color: rgba(255,225,117,0.70);
+}
+
+.postContent{
+    height:90px;
+    width:100%;
+    border-bottom:1px solid #B2B2B2BF;
+    margin-top:-10px;
+}
+
+.postContent ul li span img{
+    height:80px;
+    width:120px;
+    margin-left:-10px;
+}
+
+.postContent .post-user-title{
+    font-size: 14px;
+    display:block;
+    margin-top:-70px;
+    margin-left:120px;
+    margin-bottom:-20px;
+}
+.postContent .post-user-image img{
+    height:30px;
+    width:30px;
+    border-radius: 100%;
+    margin-left:300px;
+}
+.post-bottom-line{
+    display:flex;
+}
+.post-like-count {
+    color:white;
+    font-size:15px;
+    margin-left:5px;
+}
+
+
+.postContent .post-regist-time{
+    margin-left:90px;
+    color:grey;
+}
+.postContent .post-user-nickname{
+    margin-left:135px;
+}
+
+.writePost{
+    /*위치고정 해야함*/
+    position: fixed;
+    top: 600px;
+    left: 150px;
+    border: 3px solid rgba(255,225,117,0.70);
+    border-radius: 30px;
+    width: 85px;
+    height: 20px;
+    padding:5px;
+    text-align: center;
+    color:black;
+    background-color: white;
+}
+
+.writePost .write-text{
+    margin-left:5px;
+}

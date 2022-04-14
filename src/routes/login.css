@@ -1,0 +1,77 @@
+
+.login-head Link{
+    margin: 200px 10px 10px 50px;
+    display: inline;
+}
+
+.login-head img{
+    margin: 100px 10px 10px 30px;
+    display: inline;
+}
+
+.login-head span{
+    margin: 100px 10px 10px 50px;
+    display: inline;
+    font-size: 2.5em;
+}
+
+.oauth-login .kakao a button{
+    margin: 100px 50px 10px 60px;
+    width: 250px;
+    height: 35px;
+    border-radius: 12px;
+    background-color: #FEE500;
+    border: none;
+}
+
+.oauth-login .kakao a button img{
+    margin-right:8px;
+    height:13px;
+    width:15px;
+}
+
+
+.oauth-login .google a button{
+    margin: 10px 50px 10px 60px;
+    width: 250px;
+    height: 35px;
+    border-radius: 12px;
+    background-color: #FFF;
+    border: 1px solid #E0E0E0;
+}
+.oauth-login .google a button span{
+    margin-right:18px;
+}
+
+
+.oauth-login .naver a button{
+    margin: 10px 50px 10px 60px;
+    width: 250px;
+    height: 35px;
+    border-radius: 12px;
+    background-color: #03C75A;
+    border: none;
+    color: white;
+
+}
+.oauth-login .naver a button img{
+    margin-right:10px;
+    height:26px;
+    width:26px;
+}
+
+.oauth-login .apple button{
+    margin: 10px 50px 10px 60px;
+    width: 250px;
+    height: 35px;
+    border-radius: 12px;
+    background-color: #000000;
+    color: white;
+    border: none;
+
+}
+
+.oauth-login .apple button span{
+    margin-right:20px;
+}
+
