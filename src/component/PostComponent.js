@@ -59,7 +59,7 @@ function Post() {
                         <span className="post-image" >
                             <img style={postImageStyle} src="https://w.namu.la/s/f736d9222a735c1291edb8e6dcbb53b20bf39160e29e81266741cab1fb40fbed6c6ce7f9ac57657831cf879ba12507d5e2a7779f371d66e0aef77624669602668553052b197f81010a48a4b238a17eee" alt=""/>
                         </span>
-                        <span className="post-title" style={postTitleStyle}>
+                        <span className="post-user-title" style={postTitleStyle}>
                             사과 나눔해요
                         </span>
                         <span className="post-user-image">

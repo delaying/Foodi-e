@@ -34,9 +34,11 @@
 
 }
 
-body{
+body,
+input{
     font-family:var(--font-story);
 }
+
 
 
 /*header*/
@@ -54,25 +56,27 @@ header .title {
     margin-left : 30px;
 }
 
-header .search{
-    display: flex;
-    background-color:var(--main-color);
-    width:190px;
+header .search .search-icon {
+    position:absolute;
+    left:270px;
+    margin-top:-20px;
+}
+
+header .search input{
+    position:relative;
+    background-color:#FFE175;
+    width:200px;
     height : 22px;
+    margin-top:5px;
+    border:none;
     border-radius:20px;
     margin-right:20px;
 }
-
-header .search .search-icon {
-    margin-left:40px;
-    margin-top:2px;
+header .search input::placeholder{
+    color:white;
 }
-
-header .search .search-text {
-    font-size: var(--font-small);
-    color: white;
-    margin-top:5px;
-    margin-left: 20px;
+header .search input:focus{
+    outline:none;
 }
 
 

@@ -1,71 +1,141 @@
-.header-button {
-  background-color:white;
-  width:68px;
-  height:24px;
-  text-align:center;
-  border:1.5px solid #FFE175;
-  border-radius:30px;
-}
-
-.post-title{
- background-color:#FFE175;
- width:100%;
- height:45px;
-}
-
-.post-title-option{
+.header .prev-arrow,
+.header .header-content,
+.header .header-button{
     display: inline-block;
-     color: #8f8f8f;
-     height:24px;
-     width:370px;
-     background-color:white;
-     padding:3px;
-     border-radius:20px;
-     text-align:center;
-    /*중앙으로 옮기기 ㅜㅜ*/
-    vertical-align: middle;
+    margin-left: 25px;
+}
+.header .prev-arrow,
+.header .header-content{
+    margin-right:70px;
 }
 
-.post-category{
-    display: block;
+
+.header .header-button button {
+    background-color: white;
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    border: 2px solid #FFE175;
+    border-radius: 30px;
+}
+
+.post-title {
+    background-color: rgba(255, 225, 117, 0.70);
+    width: 100%;
+    height:25px;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+.post-title input {
+    border: none;
+    background-color: white;
+    width: 370px;
+    height: 25px;
+    border-radius: 20px;
+    padding:10px;
+}
+
+.post-title input:focus {
+    outline: none;
+}
+
+
+.post-category .top-line{
+    display: flex;
+    margin-left: 20px;
+}
+
+.post-category .choice-top-button{
+    border:1px solid #cccccc;
+    border-radius:15px;
+    height:15px;
+    padding:8px;
+    margin-right: 30px;
+    display: flex;
+}
+
+.post-category .choice-button{
+    border:1px solid #cccccc;
+    border-radius:15px;
+    height:45px;
+    padding:10px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.post-category .detail-choice p{
+    margin-left:20px;
+    margin-bottom:5px;
+
+}
+.post-category .detail-choice span{
+    margin-right:20px;
+    margin-bottom:5px;
+}
+
+.post-category .arrowRight-icon{
+    margin-left:5px;
+
+}
+
+
+
+select{
+    border-radius:10px;
+    border:1px solid #ababab;
+}
+
+.post-photo {
+    background-color: rgba(255, 225, 117, 0.70);
+    width: 100%;
+    height: 200px;
+    padding:15px;
+    margin-top:20px;
+}
+
+.post-photo .add-photo {
+    background-color: white;
+    width: 130px;
+    height: 110px;
+    border: 1.5px solid #bebebe;
+    border-radius: 20px;
+    color: #949494;
+    text-align: center;
+    padding:30px;
     margin-left:20px;
 }
-
-.post-photo{
-    background-color: #FFE175;
-    width:100%;
-    height:200px;
+.post-photo #chooseFile{
+    visibility:hidden;
 }
 
-.post-photo .add-photo{
-    background-color:white;
-    width:200px;
-    height:170px;
-    border: 1.5px solid #bebebe;
-    border-radius:20px;
-    color: #949494;
-    text-align:center;
+.post-photo .date-explanation{
+    margin-top:-10px;
+    margin-left:10px;
 }
 
-.post-content{
+.post-content input {
     background-color: #efefef;
-    width:360px;
-    height:180px;
-    margin:20px;
-    border-radius:20px;
+    width: 360px;
+    height: 180px;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
 }
-.post-content p{
+
+.post-content input:focus {
+    outline: none;
+}
+
+
+.post-precations {
+    margin-top:-20px;
+    margin-right:20px;
     color: #494949;
     display: inline-block;
-    /*text-align:center;*/
-    vertical-align: middle;
 }
 
-.post-precations{
-    color:#494949;
-    display: inline-block;
-}
-
-.post-precations .check-agree{
-    text-align:center;
+.post-precations .check-agree {
+    text-align: center;
 }
