@@ -51,7 +51,9 @@ function Board() {
                     <HiSearch size={20}/>
                 </span>
                 <span className="header-main-img">
-                    <img src={mainIcon} alt=""/>
+                   <Link to="/mypage">
+                       <img src={mainIcon} alt=""/>
+                   </Link>
                 </span>
             </div>
             <div className="choice-area">

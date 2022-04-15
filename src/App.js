@@ -5,6 +5,7 @@ import Board from "./routes/Board";
 import Home from "./routes/Home";
 import Login from "./routes/Login";
 import WritePost from "./routes/WritePost";
+import Mypage from "./routes/Mypage";
 
 function App() {
     return (
@@ -12,6 +13,9 @@ function App() {
             <Switch>
                 <Route path="/login">
                     <Login/>
+                </Route>
+                <Route path="/mypage">
+                    <Mypage/>
                 </Route>
                 <Route path="/post/:name/write">
                     <WritePost/>
