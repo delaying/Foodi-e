@@ -163,15 +163,13 @@ nav .nav-img {
     display: flex;
     margin-left:280px;
     margin-top:-20px;
-    height:15px;
-    border : 2px solid var(--main-color);
-    border-radius:20px;
-    margin-right:20px;
-    padding:5px;
 }
 
-.latest-post .post-nav .post-nav-text{
+.latest-post .post-nav .post-nav-text select{
+    width:60px;
     margin-left:20px;
+    border : 1.5px solid var(--main-color);
+    padding:2px;
 }
 
 

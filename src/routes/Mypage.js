@@ -1,22 +1,37 @@
 import React from 'react';
-import "./login.css";
+import "./mypage.css";
+import mainIcon from "../img/mainimage.svg";
+import {ImArrowLeft2} from "react-icons/im";
+
 
 function Mypage() {
     return (
         <>
             <div className="mypage-header">
-                <div className="prev-arrow-icon"></div>
-                <div className="main-img"></div>
+                <div className="prev-arrow-icon">
+                    <ImArrowLeft2/>
+                </div>
+                <div className="main-img">
+                    <img src={mainIcon} alt=""/>
+                </div>
                 <div className="header-text"><h4>마이페이지</h4></div>
             </div>
             <div className="profile">
                 <div className="profile-setting">
                     프로필 설정
                 </div>
-                <div className="profile-img"></div>
-                <div className="user-nickname"></div>
-                <div className="user-grade"></div>
-                <div className="user-area"></div>
+                <div className="profile-img">
+
+                </div>
+                <div className="user-nickname">
+                    민도리
+                </div>
+                <div className="user-grade">
+                    직급
+                </div>
+                <div className="user-area">
+                    우리 동네
+                </div>
             </div>
             <div className="mypost">
                 <button>

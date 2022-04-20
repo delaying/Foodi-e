@@ -1,5 +1,4 @@
 import React from "react";
-import {RiArrowDropDownLine} from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 
@@ -8,8 +7,13 @@ function LatestPost(){
         <section className="latest-post">
             <div className="title">최근 게시물</div>
             <div className="post-nav">
-                <div className="post-nav-text">나눔</div>
-                <div className="post-nave-dropIcon"><RiArrowDropDownLine size={25}/></div>
+                <div className="post-nav-text">
+                    <select name="area" id="select">
+                        <option value="free">나눔</option>
+                        <option value="change">교환</option>
+                        <option value="party">파티</option>
+                    </select>
+                </div>
             </div>
             <div className="post-list">
                 <ul>
