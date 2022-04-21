@@ -2,14 +2,14 @@ import React from 'react';
 import "./mypage.css";
 import mainIcon from "../img/mainimage.svg";
 import {ImArrowLeft2} from "react-icons/im";
-
+import Post from "../component/PostComponent";
 
 function Mypage() {
     return (
         <>
             <div className="mypage-header">
                 <div className="prev-arrow-icon">
-                    <ImArrowLeft2/>
+                    <ImArrowLeft2 size={20}/>
                 </div>
                 <div className="main-img">
                     <img src={mainIcon} alt=""/>
@@ -42,6 +42,11 @@ function Mypage() {
                 <button>
                     찜 목록
                 </button>
+                <Post/>
+                <Post/>
+                <Post/>
+                <Post/>
+                <Post/>
             </div>
         </>
     )
