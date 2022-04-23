@@ -63,7 +63,10 @@ function Board() {
                 </span>
             </div>
 
-            <Post/>
+            <Link to="/post/number">
+                <Post/>
+            </Link>
+
             <Post/>
             <Post/>
             <Post/>

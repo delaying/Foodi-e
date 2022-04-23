@@ -1,0 +1,20 @@
+.post-photo{
+    background-color: #FFE175;
+}
+
+button{
+    width:70px;
+    border-radius:10px;
+    border:1px solid #FFE175;
+    background-color:white;
+    padding:7px;
+    text-align:center;
+    margin-top:10px;
+}
+
+.post-button{
+    display:flex;
+    justify-content: space-between;
+    margin-left:10px;
+    margin-right:10px;
+}

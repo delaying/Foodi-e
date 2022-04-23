@@ -3,13 +3,17 @@ import "./mypage.css";
 import mainIcon from "../img/mainimage.svg";
 import {ImArrowLeft2} from "react-icons/im";
 import Post from "../component/PostComponent";
+import { Link } from "react-router-dom";
 
 function Mypage() {
     return (
         <>
             <div className="mypage-header">
                 <div className="prev-arrow-icon">
-                    <ImArrowLeft2 size={20}/>
+                    <Link to="">
+                        <ImArrowLeft2 size={20}/>
+                    </Link>
+
                 </div>
                 <div className="main-img">
                     <img src={mainIcon} alt=""/>

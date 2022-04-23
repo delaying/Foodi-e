@@ -6,11 +6,16 @@ import Home from "./routes/Home";
 import Login from "./routes/Login";
 import WritePost from "./routes/WritePost";
 import Mypage from "./routes/Mypage";
+import PostDetail from "./routes/PostDetail";
 
 function App() {
     return (
         <Router>
             <Switch>
+                {/*나중에 게시물번호로 이동*/}
+                <Route path="/post/number">
+                    <PostDetail/>
+                </Route>
                 <Route path="/login">
                     <Login/>
                 </Route>
