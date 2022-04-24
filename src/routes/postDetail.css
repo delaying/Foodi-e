@@ -1,5 +1,17 @@
-.post-photo{
+.post-title{
     background-color: #FFE175;
+}
+
+.post-user{
+    background-color: #efefef;
+    padding:10px;
+}
+
+.post-content{
+    background-color: #efefef;
+    width:100%;
+    height:100px;
+    padding:10px;
 }
 
 button{
