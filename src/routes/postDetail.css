@@ -2,6 +2,33 @@
     background-color: #FFE175;
 }
 
+.post-photos{
+    display:flex;
+    flex-direction: row;
+}
+
+.post-photos img{
+    width:200px;
+    border-radius:10px;
+    margin-bottom:10px;
+    margin-left:10px;
+
+}
+
+.post-photos .photo-first{
+    z-index:3
+}
+
+.post-photos .photo-second {
+    z-index:2;
+    margin-left:-100px;
+}
+
+.post-photos .photo-third {
+    z-index:1;
+    margin-left:-100px;
+}
+
 .post-user{
     background-color: #efefef;
     padding:10px;
