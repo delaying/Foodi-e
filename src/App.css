@@ -210,9 +210,15 @@ nav .nav-img {
     border:none;
     height:25px;
     border-radius:10px;
+    text-align:center;
+    padding:5px;
 }
 
 .latest-post .addPost a{
     text-decoration:none;
     color: #3b3b3b;
+}
+
+@media screen and (min-width: 768px){
+
 }

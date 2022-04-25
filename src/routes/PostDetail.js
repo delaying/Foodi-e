@@ -17,10 +17,10 @@ function PostDetail() {
                 <div className="user-picture"></div>
             </div>
             <div className="post-detail">
-                <div className="lotate">위치</div>
-                <div className="area">거래 장소</div>
-                <div className="time">거래 시간</div>
-                <div className="storage">식품 보관 방법</div>
+                <div className="locate">위치 : 대전광역시 유성구</div>
+                <div className="area">거래 장소 : 한밭대학교</div>
+                <div className="time">거래 시간 : pm 3:00</div>
+                <div className="storage">식품 보관 방법 : 냉장</div>
             </div>
             <div className="post-content">
                 사과가 많아서 나눔합니당.
