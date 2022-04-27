@@ -5,24 +5,36 @@
     height:50px;
 }
 
+.mypage-header .prev-arrow-icon{
+    margin-top:13px;
+}
+
 .mypage-header .main-img img{
+    margin-top:8px;
+    margin-left:100px;
+    margin-right:20px;
     height:30px;
 }
 
+
 .profile{
     background-color: rgba(255, 225, 117, 0.75);
+    padding:15px;
+    height:130px;
 }
 
 .profile .profile-img img{
     border-radius:50%;
-    height:70px;
+    height:80px;
     margin-left:20px;
     margin-top:10px;
 }
 .profile .profile-right{
-    text-align:right;
-    margin-right:20px;
-    margin-top:-50px;
+    display:flex;
+    flex-direction: column;
+    margin-top:-70px;
+    text-align:left;
+    margin-left:120px;
 }
 
 button{
@@ -34,8 +46,10 @@ button{
 
 .mypost button{
     background-color: #fffbf4;
+    padding:10px;
 }
 
 .like-post button{
     background-color: #ffeebe;
+    padding:10px;
 }

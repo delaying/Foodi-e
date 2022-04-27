@@ -1,8 +1,11 @@
-.header .prev-arrow,
-.header .header-content,
-.header .header-button{
-    display: inline-block;
-    margin-left: 25px;
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.prev-arrow{
+    margin-top:15px;
 }
 
 .header .header-content{
@@ -11,13 +14,14 @@
 }
 
 
-.header .header-button button {
+.header .header-complete-button button {
     background-color: white;
     width: 70px;
     height: 25px;
     text-align: center;
     border: 2px solid #FFE175;
     border-radius: 30px;
+   margin-top:10px;
 }
 
 .post-title {
@@ -31,7 +35,7 @@
 .post-title input {
     border: none;
     background-color: white;
-    width: 370px;
+    width: 95%;
     height: 25px;
     border-radius: 20px;
     padding:10px;
@@ -115,11 +119,13 @@ select{
     margin-left:10px;
 }
 
-.post-content input {
+
+
+.post-input-content input {
     background-color: #efefef;
-    width: 360px;
+    width: 90%;
     height: 180px;
-    margin: 20px;
+    margin:20px;
     border-radius: 20px;
     text-align: center;
     border: none;
@@ -127,11 +133,11 @@ select{
 
 .post-content input:focus {
     outline: none;
+    margin-bottom:10px;
 }
 
 
-.post-precations {
-    margin-top:-20px;
+.post-precations ul{
     margin-right:20px;
     color: #494949;
     display: inline-block;

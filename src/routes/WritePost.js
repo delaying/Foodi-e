@@ -36,14 +36,14 @@ function WritePost({history}) {
                 {/*</div>*/}
                 <div className="prev-arrow">
                     <Link to="/post">
-                        <ImArrowLeft2/>
+                        <ImArrowLeft2 size={20}/>
                     </Link>
                 </div>
 
                 <div className="header-content">
                     <h3>게시물 작성중 ...</h3>
                 </div>
-                <div className="header-button">
+                <div className="header-complete-button">
                     <button>
                         <TiPencil size={20}/>
                         완료
@@ -130,7 +130,7 @@ function WritePost({history}) {
                 </form>
                 <p className="date-explanation">유통기한이 보이는 사진도 등록해주세요</p>
             </div>
-            <div className="post-content">
+            <div className="post-input-content">
                 <input type="text" placeholder="설명을 등록해주세요"/>
 
             </div>

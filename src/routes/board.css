@@ -45,8 +45,12 @@ ul{
     background-color: rgba(255,225,117,0.70);
 }
 
+.choice-area span{
+    justify-content: flex-end;
+}
+
 .postContent{
-    height:90px;
+    height:80px;
     width:100%;
     border-bottom:1px solid #B2B2B2BF;
     margin-top:-10px;
