@@ -15,6 +15,9 @@ function Header() {
                     <HiSearch size="18" color="white"/>
                 </div>
             </div>
+            <div className="header-write-button">
+                <button>글쓰기</button>
+            </div>
             <div className="my-page"><Link to="/login">
                 <img src={MainImg} alt="메인이미지"/>
             </Link>

@@ -57,6 +57,10 @@ header .title {
     margin-left : 30px;
 }
 
+header .header-write-button{
+    display:none;
+}
+
 header .search .search-icon {
     position:absolute;
     left:270px;
@@ -84,6 +88,10 @@ header .search input:focus{
 header .my-page img{
     height:35px;
     margin-top: -7px;
+}
+
+.banner-desk-img{
+    display:none;
 }
 
 .banner-img{
@@ -139,7 +147,11 @@ nav .nav-img {
 
 
 /*ChiceAddress Style*/
-.choiceAddress {
+.middle-line{
+    display: none;
+}
+
+.mobile-choice-address .choiceAddress {
     height:15px;
     display: flex;
     margin-left:20px;
@@ -254,6 +266,33 @@ nav .nav-img {
 }
 
 @media screen and (min-width: 768px){
+    /*header*/
+    header{
+        display:flex;
+        width:100%;
+        justify-content: center;
+        height:50px;
+        border:none;
+
+    }
+
+    header .title{
+        font-size:35px;
+    }
+
+    header .header-write-button {
+        display:inline-block;
+        margin-top:4px;
+    }
+    header .header-write-button button{
+        background-color: rgba(255, 225, 117, 0.7);
+        border-radius:20px;
+        border:none;
+        padding:10px;
+        width: 70px;
+        height:35px;
+    }
+
     header .search input{
         position:relative;
         background-color:white;
@@ -269,15 +308,132 @@ nav .nav-img {
         color:#3b3b3b;
     }
 
-
-    nav{
-        position:absolute;
-        top:100px;
-        z-index:1;
+    header .my-page img{
+        height:35px;
+        margin-top:1px;
+        margin-left:15px;
     }
 
+    /*nav*/
+    nav .nav-img,
+    nav .nav-text{
+        display:flex;
+        justify-content:center;
+    }
 
+    nav .nav-img li,
+    nav .nav-text li{
+        margin-right:50px;
 
+    }
+
+    /*banner*/
+    .banner-img{
+        display:none;
+    }
+
+    .banner-desk-img{
+        display:inline-block;
+        background-color: rgba(255, 225, 117, 0.7);
+        height:200px;
+        width:100%;
+        padding:10px;
+    }
+    .banner-desk-img img{
+        width:70%;
+        height:200px;
+        display:flex;
+        justify-content:center;
+        object-fit:none;
+        border-radius:10px;
+        margin: 0 auto;
+    }
+
+    /*middle line*/
+    .mobile-choice-address .choiceAddress{
+        display:none;
+    }
+    .middle-line {
+        display:flex;
+        justify-content:space-around;
+        width:70%;
+        margin: 0 auto;
+    }
+
+    .middle-line section{
+        margin-top:10px;
+        width:250px;
+        font-size: 16px;
+    }
+
+    /*지역선택*/
+    .middle-line .choiceAddress .address-title{
+        height:15px;
+        display: flex;
+        border : 2px solid var(--main-color);
+        border-radius:20px;
+        padding:5px;
+        width:250px;
+    }
+
+    .middle-line .choiceAddress{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .middle-line .choiceAddress .address-title{
+        padding:5px;
+    }
+
+    .middle-line .choiceAddress .address-title .setting{
+        display: flex;
+        margin-left:80px;
+    }
+
+    .middle-line .choiceAddress .address-title .setting .settingIcon{
+        margin-right:10px;
+    }
+    .middle-line .choiceAddress .address-title .setting .settingTitle{
+        font-size: 13px;
+    }
+    .middle-line .choiceAddress .map-img img{
+        margin-top:10px;
+        height:200px;
+        width:265px;
+        border-radius:10px;
+    }
+
+    /*인기게시물*/
+    .middle-line .hot-post-section .hot-posts{
+        border:2px dotted #FFE175;
+        border-radius:10px;
+        margin-top:10px;
+        padding:10px;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        flex-wrap:wrap;
+        align-content: stretch;
+    }
+
+    .middle-line .hot-post-section .hot-posts .simple-hot-post img{
+        height:80px;
+        width: 100px;
+        border-radius:10px;
+    }
+
+    /*오늘의 레시피*/
+    .middle-line .today-recipe-section .today-recipes{
+        display:flex;
+        flex-direction: row;
+        font-size:13px;
+    }
+
+    .middle-line .today-recipe-section .today-recipes .recipe-img img{
+        height:180px;
+        border-radius:10px;
+
+    }
 
 
 }

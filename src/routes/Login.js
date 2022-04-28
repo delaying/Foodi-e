@@ -34,12 +34,12 @@ function Login() {
                     <a href="https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email&client_id=509614173781-loe251uu4s8osmsdroq8h4h9e6ipi6k5.apps.googleusercontent.com&response_type=code&redirect_uri=http://localhost:8080/login/google&access_type=offline">
                        <button>
                            <span><FcGoogle size={20}/></span>
-                           구글로 로그인</button>
+                          구글로 로그인</button>
                     </a>
                 </div>
                 <div className="naver" >
                     <a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=t0ileSQ7AIkXzPHtjLZm&redirect_uri=http://localhost:8080/login/naver">
-                        <button><img src={naverIcon} alt=""/>네이버로 로그인</button>
+                        <button><img src={naverIcon} alt=""/><span> 네이버로 로그인</span></button>
                     </a>
                 </div>
                 <div className="apple">

@@ -37,7 +37,8 @@
     margin-left:120px;
 }
 
-button{
+.mypost button,
+.like-post button{
     padding:10px;
     border:none;
     width:100%;

@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Foodi-e/static/css/main.81d4a5b8.css",
-    "main.js": "/Foodi-e/static/js/main.a7a79520.js",
+    "main.css": "/Foodi-e/static/css/main.f233d876.css",
+    "main.js": "/Foodi-e/static/js/main.e3c2677a.js",
     "static/media/changeIcon.svg": "/Foodi-e/static/media/changeIcon.60134b228e247c8d3680525a2fe371f9.svg",
     "static/media/partyIcon.svg": "/Foodi-e/static/media/partyIcon.20975765c0c9ea31fc3c706dfc3f43ea.svg",
     "static/media/recipeIcon.svg": "/Foodi-e/static/media/recipeIcon.035d5a8f68336d3b9d116e028f535796.svg",
     "static/media/freeIcon.svg": "/Foodi-e/static/media/freeIcon.669f7f1edaa7cc673e999f1c0264ccea.svg",
     "static/media/mainimage.svg": "/Foodi-e/static/media/mainimage.81b488ed67633ddd72d0b4da5a519f09.svg",
     "index.html": "/Foodi-e/index.html",
-    "main.81d4a5b8.css.map": "/Foodi-e/static/css/main.81d4a5b8.css.map",
-    "main.a7a79520.js.map": "/Foodi-e/static/js/main.a7a79520.js.map"
+    "main.f233d876.css.map": "/Foodi-e/static/css/main.f233d876.css.map",
+    "main.e3c2677a.js.map": "/Foodi-e/static/js/main.e3c2677a.js.map"
   },
   "entrypoints": [
-    "static/css/main.81d4a5b8.css",
-    "static/js/main.a7a79520.js"
+    "static/css/main.f233d876.css",
+    "static/js/main.e3c2677a.js"
   ]
 }
