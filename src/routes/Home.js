@@ -4,6 +4,7 @@ import {Nav} from "../component/NavComponent";
 import {ChoiceAddress} from "../component/ChoiceAddressComponent";
 import {LatestPost} from "../component/LatestPostComponent";
 import DeskMainMiddle from "../component/DeskMainMiddleComponent";
+import DeskLatestPost from "../component/DeskLatestPostComponent";
 import React from "react";
 import "../App.css";
 
@@ -29,6 +30,7 @@ function Home() {
             <DeskMainMiddle/>
 
             <LatestPost/>
+            <DeskLatestPost/>
         </>
 
     )

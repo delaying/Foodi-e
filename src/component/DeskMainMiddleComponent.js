@@ -48,14 +48,13 @@ function DeskMainMiddle() {
                         <div>망고 나눠요</div>
                     </div>
                 </div>
-
             </section>
 
             <section className="today-recipe-section">
                 <div>오늘의 레시피</div>
-                <h5>[ 리조또 ]</h5>
                 <div className="today-recipes">
                     <span className="recipe-img">
+                        <span className="recipe-title">[ 리조또 ]</span>
                         <img src="https://images.unsplash.com/photo-1595908129746-57ca1a63dd4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmlzb3R0b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
                     </span>
                     <span className="recipe-detail">

@@ -180,6 +180,10 @@ nav .nav-img {
 
 
 /*latest-Post Style*/
+.desk-latest-post{
+    display:none;
+}
+
 .latest-post .title,
 .latest-post .post-nav{
     margin-top:20px;
@@ -356,7 +360,7 @@ nav .nav-img {
     .middle-line {
         display:flex;
         justify-content:space-around;
-        width:70%;
+        width:72%;
         margin: 0 auto;
     }
 
@@ -398,7 +402,7 @@ nav .nav-img {
     }
     .middle-line .choiceAddress .map-img img{
         margin-top:10px;
-        height:200px;
+        height:220px;
         width:265px;
         border-radius:10px;
     }
@@ -427,11 +431,70 @@ nav .nav-img {
         display:flex;
         flex-direction: row;
         font-size:13px;
+        border:2px dotted #FFE175;
+        padding:10px;
+        width:100%;
+        margin-top:10px;
+    }
+
+    .middle-line .today-recipe-section .today-recipes .recipe-img .recipe-title{
+        font-size:15px;
+        font-weight:bold;
+        margin-left:100px;
+        margin-top:10px;
     }
 
     .middle-line .today-recipe-section .today-recipes .recipe-img img{
-        height:180px;
+        height:170px;
         border-radius:10px;
+        margin-top:10px;
+    }
+
+    .middle-line .today-recipe-section .today-recipes .recipe-detail{
+        margin-left:-120px;
+        margin-top:20px;
+    }
+
+    /*latest-post*/
+    .latest-post{
+        display:none;
+    }
+
+    .desk-latest-post{
+        display:block;
+        margin-top:20px;
+    }
+
+    .desk-latest-post .desk-latest-title{
+        display:flex;
+        justify-content:space-around;
+        font-size:16px;
+        margin-bottom:10px;
+    }
+
+    .desk-latest-post .desk-latest-contents{
+        display:flex;
+        width:67%;
+        justify-content:space-around;
+        margin:0 auto;
+        flex-wrap:wrap;
+        align-content: stretch;
+        border:3px solid rgba(255, 225, 117, 0.7);
+        border-radius:10px;
+        padding:20px;
+    }
+
+    .desk-latest-post .desk-latest-contents .desk-latest-content img{
+        height:150px;
+        width:160px;
+        border-radius:10px;
+        margin-top:20px;
+        margin-right:10px;
+        margin-left:10px;
+    }
+
+    .desk-latest-post .desk-latest-contents .desk-latest-content div {
+        margin-left:10px;
 
     }
 
