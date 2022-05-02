@@ -498,5 +498,12 @@ nav .nav-img {
 
     }
 
+    /*게시판*/
+    .postContent{
+        display:none;
+    }
+    .postpage{
+        display:none;
+    }
 
 }

@@ -14,6 +14,8 @@ import {useParams} from 'react-router-dom';
 import "./board.css";
 import Post from "../component/PostComponent";
 
+import DeskPost from "../component/DeskPostComponent";
+
 
 function Board() {
     // const [postname, setPostname] = useState('나눔');
@@ -40,51 +42,61 @@ function Board() {
 
 
     return (
-        <div className="postpage">
-            <div className="post-header">
-                <Link to="/"><img src={icon} alt=""/></Link>
-                <h4>{name} 게시판</h4>
-                <span className="header-drop-icon">
+        <>
+            {/*데스크화면*/}
+            <div className="desk-post-page">
+                <DeskPost/>
+            </div>
+
+
+            {/*모바일화면*/}
+            <div className="postpage">
+                <div className="post-header">
+                    <Link to="/"><img src={icon} alt=""/></Link>
+                    <h4>{name} 게시판</h4>
+                    <span className="header-drop-icon">
                     <RiArrowDropDownLine size="35"/>
                 </span>
-                <span className="header-search-icon">
+                    <span className="header-search-icon">
                     <HiSearch size={20}/>
                 </span>
-                <span className="header-main-img">
+                    <span className="header-main-img">
                    <Link to="/mypage">
                        <img src={mainIcon} alt=""/>
                    </Link>
                 </span>
-            </div>
-            <div className="choice-area">
-                <span className="area-text">덕명동</span>
-                <span className="area-dropdown-icon">
+                </div>
+                <div className="choice-area">
+                    <span className="area-text">덕명동</span>
+                    <span className="area-dropdown-icon">
                     <RiArrowDropDownLine size="25"/>
                 </span>
-            </div>
+                </div>
 
-            <Link to="/post/number">
+                <Link to="/post/number">
+                    <Post/>
+                </Link>
+
                 <Post/>
-            </Link>
-
-            <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
+                <Post/>
+                <Post/>
+                <Post/>
+                <Post/>
+                <Post/>
+                <Post/>
 
 
-            <Link to={{pathname: `${data}/write`}}>
-                <div className="writePost">
+                <Link to={{pathname: `${data}/write`}}>
+                    <div className="writePost">
                     <span className="write-icon" >
                         <TiPencil size={18}/>
                     </span>
-                    <span className="write-text">글쓰기</span>
-                </div>
-            </Link>
-        </div>
+                        <span className="write-text">글쓰기</span>
+                    </div>
+                </Link>
+            </div>
+        </>
+
 
     )
 }
