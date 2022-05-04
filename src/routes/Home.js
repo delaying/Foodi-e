@@ -5,6 +5,7 @@ import {ChoiceAddress} from "../component/ChoiceAddressComponent";
 import {LatestPost} from "../component/LatestPostComponent";
 import DeskMainMiddle from "../component/DeskMainMiddleComponent";
 import DeskLatestPost from "../component/DeskLatestPostComponent";
+import Footer from "../component/FooterComponent";
 import React from "react";
 import "../App.css";
 
@@ -31,6 +32,8 @@ function Home() {
 
             <LatestPost/>
             <DeskLatestPost/>
+
+            <Footer/>
         </>
 
     )

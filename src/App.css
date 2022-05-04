@@ -269,6 +269,42 @@ nav .nav-img {
     color: #3b3b3b;
 }
 
+/*카테고리 메인화면*/
+
+
+
+
+/*Footer */
+.footer-top{
+    display:flex;
+    margin-left:20px;
+    margin-top:30px;
+
+}
+.footer-top .footer-logo img{
+    width:30px;
+}
+.footer-top .footer-title{
+    font-family: 'Indie Flower', cursive;
+    font-size:25px;
+    margin-left:10px;
+}
+
+.footer-bottom {
+    margin-left:20px;
+    margin-top:10px;
+}
+
+.footer-bottom .footer-info div{
+    font-size:14px;
+    margin-bottom:5px;
+}
+
+.footer-bottom .footer-copyright{
+    margin-top:15px;
+}
+
+
 @media screen and (min-width: 768px){
     /*header*/
     header{
@@ -277,11 +313,15 @@ nav .nav-img {
         justify-content: center;
         height:50px;
         border:none;
-
+        margin-top:20px;
     }
 
     header .title{
         font-size:35px;
+    }
+
+    header .search .search-icon{
+        display:none;
     }
 
     header .header-write-button {
@@ -505,5 +545,40 @@ nav .nav-img {
     .postpage{
         display:none;
     }
+
+    /*Footer */
+    .footer-top{
+        display:flex;
+        margin-left:15%;
+        margin-top:30px;
+        color: #606060;
+    }
+    .footer-top .footer-logo img{
+        width:40px;
+    }
+    .footer-top .footer-title{
+        font-family: 'Indie Flower', cursive;
+        font-size:35px;
+        margin-left:10px;
+    }
+
+    .footer-bottom {
+        margin-left:15%;
+        margin-top:10px;
+        margin-bottom:30px;
+        display:flex;
+        color: #606060;
+    }
+
+    .footer-bottom .footer-info div{
+        font-size:17px;
+        margin-bottom:5px;
+    }
+
+    .footer-bottom .footer-copyright{
+        margin-top:55px;
+        margin-left:45%;
+    }
+
 
 }

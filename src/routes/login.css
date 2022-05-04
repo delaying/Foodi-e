@@ -14,6 +14,11 @@
     display: inline;
     font-size: 2.5em;
 }
+.oauth-login {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
 
 .oauth-login .kakao a button{
     margin: 100px 50px 10px 60px;
@@ -76,4 +81,13 @@
 .oauth-login .apple button span{
     margin-right:20px;
 }
+
+@media screen and (min-width: 768px) {
+
+    .oauth-login {
+        margin-left:400px;
+    }
+
+}
+
 
