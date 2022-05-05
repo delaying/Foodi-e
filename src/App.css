@@ -269,11 +269,6 @@ nav .nav-img {
     color: #3b3b3b;
 }
 
-/*카테고리 메인화면*/
-
-
-
-
 /*Footer */
 .footer-top{
     display:flex;
@@ -384,7 +379,7 @@ nav .nav-img {
         padding:10px;
     }
     .banner-desk-img img{
-        width:70%;
+        width:1024px;
         height:200px;
         display:flex;
         justify-content:center;
@@ -400,7 +395,7 @@ nav .nav-img {
     .middle-line {
         display:flex;
         justify-content:space-around;
-        width:72%;
+        width:1024px;
         margin: 0 auto;
     }
 
@@ -505,6 +500,14 @@ nav .nav-img {
         margin-top:20px;
     }
 
+    .desk-latest-post h4{
+        padding: 0;
+        margin:0;
+        text-align:left;
+        width: 1024px;
+    }
+
+
     .desk-latest-post .desk-latest-title{
         display:flex;
         justify-content:space-around;
@@ -514,14 +517,12 @@ nav .nav-img {
 
     .desk-latest-post .desk-latest-contents{
         display:flex;
-        width:67%;
+        width:1024px;
         justify-content:space-around;
         margin:0 auto;
         flex-wrap:wrap;
         align-content: stretch;
-        border:3px solid rgba(255, 225, 117, 0.7);
         border-radius:10px;
-        padding:20px;
     }
 
     .desk-latest-post .desk-latest-contents .desk-latest-content img{
@@ -546,10 +547,91 @@ nav .nav-img {
         display:none;
     }
 
+    /*카테고리 선택시 뜨는 메인화면*/
+    .DeskPost h4{
+        padding: 0;
+        margin:0;
+        text-align:left;
+        width: 1024px;
+    }
+    .DeskPost .desk-hot-post .desk-hot-title {
+        display:flex;
+        justify-content:space-around;
+        font-size:16px;
+        margin-bottom:10px;
+    }
+
+
+    .DeskPost .desk-hot-post .desk-latest-contents{
+        display:flex;
+        width:1024px;
+        justify-content:space-around;
+        margin:0 auto;
+        flex-wrap:wrap;
+        align-content: stretch;
+        border-radius:10px;
+    }
+
+    .DeskPost .desk-hot-post .desk-latest-contents .desk-latest-content img{
+        height:150px;
+        width:170px;
+        border-radius:10px;
+        margin-top:20px;
+        margin-right:10px;
+        margin-left:10px;
+    }
+
+    .DeskPost .desk-hot-post .desk-latest-contents .desk-latest-content div {
+        margin-left:10px;
+
+    }
+
+
+    .DeskPost .desk-category{
+        width:100%;
+        background-color: rgba(255, 225, 117, 0.7);
+        height:100px;
+        padding:20px;
+        margin-top:20px;
+    }
+
+    .DeskPost .desk-category .desk-category-title{
+        display:flex;
+        justify-content:space-around;
+        font-size:16px;
+        margin-bottom:10px;
+        margin-left:-15px;
+    }
+
+    .DeskPost .desk-category .desk-category-icon,
+    .DeskPost .desk-category .desk-category-icon-name {
+        display:flex;
+        flex-direction: row;
+        width:1024px;
+        justify-content:space-around;
+        margin:0 auto;
+    }
+
+
+    .DeskPost .desk-recent-posts .desk-recent-title{
+        display:flex;
+        justify-content:space-around;
+        font-size:16px;
+        margin-bottom:10px;
+        margin-top:10px;
+    }
+
+
     /*Footer */
+    footer{
+        justify-content:space-around;
+        width:1024px;
+        margin:0 auto;
+    }
+
     .footer-top{
         display:flex;
-        margin-left:15%;
+        /*margin-left:24%;*/
         margin-top:30px;
         color: #606060;
     }
@@ -563,7 +645,6 @@ nav .nav-img {
     }
 
     .footer-bottom {
-        margin-left:15%;
         margin-top:10px;
         margin-bottom:30px;
         display:flex;
@@ -577,7 +658,7 @@ nav .nav-img {
 
     .footer-bottom .footer-copyright{
         margin-top:55px;
-        margin-left:45%;
+        margin-left:520px;
     }
 
 
