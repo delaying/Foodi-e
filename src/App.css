@@ -515,6 +515,7 @@ nav .nav-img {
         margin-bottom:10px;
     }
 
+    .desk-recent-posts .desk-latest-contents,
     .desk-latest-post .desk-latest-contents{
         display:flex;
         width:1024px;
@@ -524,7 +525,7 @@ nav .nav-img {
         align-content: stretch;
         border-radius:10px;
     }
-
+    .desk-recent-posts .desk-latest-contents .desk-latest-content img,
     .desk-latest-post .desk-latest-contents .desk-latest-content img{
         height:150px;
         width:160px;
@@ -534,6 +535,7 @@ nav .nav-img {
         margin-left:10px;
     }
 
+    .desk-recent-posts .desk-latest-contents .desk-latest-content div,
     .desk-latest-post .desk-latest-contents .desk-latest-content div {
         margin-left:10px;
 
