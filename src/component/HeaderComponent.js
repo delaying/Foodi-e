@@ -16,7 +16,9 @@ function Header() {
                 </div>
             </div>
             <div className="header-write-button">
+                <Link to={{pathname: `/write`}}>
                 <button>글쓰기</button>
+                </Link>
             </div>
             <div className="my-page"><Link to="/login">
                 <img src={MainImg} alt="메인이미지"/>

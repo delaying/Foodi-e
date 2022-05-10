@@ -7,6 +7,7 @@ import Login from "./routes/Login";
 import WritePost from "./routes/WritePost";
 import Mypage from "./routes/Mypage";
 import PostDetail from "./routes/PostDetail";
+import DeskWritePost from "./routes/DeskWritePost";
 
 function App() {
     return (
@@ -24,6 +25,9 @@ function App() {
                 </Route>
                 <Route path="/post/:name/write">
                     <WritePost/>
+                </Route>
+                <Route path="/write">
+                    <DeskWritePost/>
                 </Route>
                 <Route path="/post/:name">
                     <Board/>
