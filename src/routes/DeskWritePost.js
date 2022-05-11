@@ -1,6 +1,10 @@
 import React, {useState} from 'react';
 import "./deskWritePost.css";
 import {BsCamera} from "react-icons/bs";
+import {Link} from "react-router-dom";
+import {ImArrowLeft2} from "react-icons/im";
+import {TiPencil} from "react-icons/ti";
+import MainImg from "../img/mainimage.svg";
 
 function DeskWritePost() {
     const [myImage, setMyImage] = useState("");
@@ -20,16 +24,22 @@ function DeskWritePost() {
     return (
         <>
            <div className="desk-write-post">
+
                <div className="desk-write-header">
-                   <div className="desk-write-main"></div>
+                   <div className="desk-write-main">
+                       <Link to="/">
+                           <img src={MainImg} alt="메인이미지"/>
+                            Foodi:e
+                       </Link>
+                   </div>
                    <div className="desk-write-name">
                        <p>게시글 작성중...</p>
                    </div>
                    <div className="desk-write-complete">
-                       <button>완료</button>
+                       <button> <TiPencil size={20}/> 완료</button>
                    </div>
-
                </div>
+
                <div className="desk-write">
                    <div className="desk-write-input-title">
                        <input type="text" placeholder={"글 제목을 입력하세요"}/>
@@ -41,7 +51,8 @@ function DeskWritePost() {
                                    <label htmlFor="chooseFile">
                                        <img src={myImage} alt=""/>
                                        <BsCamera size={40} color={'lightGray'}/>
-                                       <p>사진을 등록해주세요</p>
+                                       <p>사진을 끌어오거나 추가하기 버튼을 눌러</p>
+                                       <p>식재료 사진을 업로드해주세요</p>
                                    </label>
                                </div>
                                <input type="file" multiple="multiple" id="chooseFile" placeholder="사진을 등록해주세요"
@@ -51,9 +62,11 @@ function DeskWritePost() {
                        <div className="desk-input-info">
                            <div className="desk-input-category">
                                카테고리
+                               <p>나눔 > 라면</p>
                            </div>
                            <div className="desk-input-area">
                                지역
+                               <p>서울특별시 > 강남구 > 전체</p>
                            </div>
                            <div className="desk-input-detail">
                                세부사항
@@ -65,6 +78,7 @@ function DeskWritePost() {
                    </div>
 
                </div>
+
                <div className="desk-write-alert">
                    <div className="desk-write-alert-text">
                        <ul>

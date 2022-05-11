@@ -1,0 +1,120 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Indie+Flower&family=Poor+Story&family=Roboto:wght@100;300;400&display=swap');
+
+/*font-family*/
+/*font-family: 'Gowun Dodum', sans-serif;*/
+/*font-family: 'Indie Flower', cursive;*/
+/*font-family: 'Poor Story', cursive;*/
+/*font-family: 'Roboto', sans-serif;*/
+
+/*데스크 작성 헤더*/
+.desk-write-post .desk-write-header{
+    display: flex;
+    justify-content:space-around;
+    width:1200px;
+    margin: 0 auto;
+    margin-top:20px;
+}
+
+.desk-write-post .desk-write-header .desk-write-main{
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.desk-write-post .desk-write-header .desk-write-main img{
+    width:30px;
+    margin-right:10px;
+}
+
+.desk-write-post .desk-write-header .desk-write-complete button{
+    margin-top:14px;
+    height:30px;
+    width:90px;
+    font-size:15px;
+    padding:3px;
+    border:1px solid #FFE175;
+    background-color:#FFE175;
+    border-radius:30px;
+}
+
+.desk-write-post .desk-write-header .desk-write-name{
+    font-size : 20px;
+    color:#3b3b3b;
+}
+
+.desk-write-post .desk-write .desk-write-input-title input{
+    width:100%;
+    height:15px;
+    padding:10px;
+    border:2px solid #e8e8e8;
+
+}
+/*제목~사진, 디테일 내용 */
+
+.desk-write-post .desk-write .desk-write-input-title input::placeholder {
+    text-align: center;
+    margin-left:600px;
+}
+
+.desk-write-post .desk-write .desk-write-middle-input{
+    width:1200px;
+    display:flex;
+    justify-content: space-around;
+    margin:0 auto;
+    margin-top:20px;
+}
+
+
+
+.desk-write-post .desk-write .desk-write-middle-input .desk-input-photo{
+    background-color: rgb(241, 241, 241);
+    border:none;
+    width:350px;
+    padding:30px;
+    height:250px;
+    border-radius:10px;
+}
+
+.desk-write-post .desk-write .desk-write-middle-input .desk-input-photo .add-photo img{
+    width:30px;
+}
+
+.desk-write-post .desk-write .desk-write-middle-input .desk-input-info {
+  width:20%;
+}
+
+.desk-write-post .desk-write .desk-write-input-content input{
+    width:100%;
+    height:200px;
+    padding:10px;
+    border:2px solid #e8e8e8;
+    margin-top:20px;
+}
+
+.desk-write-post .desk-write .desk-write-input-content input::placeholder {
+    text-align: center;
+    margin-left:600px;
+}
+
+
+/*경고 및 알림*/
+.desk-write-post .desk-write-alert{
+    width:1200px;
+    margin: 0 auto;
+}
+
+.desk-write-post .desk-write-alert .desk-write-alert-text{
+    margin-left:130px;
+}
+
+.desk-write-post .desk-write-alert .desk-write-alert-text ul{
+    list-style:square;
+    font-size: 15px;
+    line-height:25px;
+}
+
+.desk-write-post .desk-write-alert .desk-write-agree{
+    text-align:center;
+    margin-top:20px;
+    font-size:15px;
+}
