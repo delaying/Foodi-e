@@ -98,7 +98,7 @@ function WritePost({history}) {
                         </div>
                         <div className="bottom-line">
                             <span>거래 시간
-                                <input type="date"/>
+                                <input type="datetime-local"/>
                             </span>
                             <span>식품 보관 방법
                             <select>

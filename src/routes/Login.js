@@ -22,6 +22,14 @@ function Login() {
 
                 <span>로그인</span>
             </div>
+            <div className="input-login">
+                <form action="/auth/signup" encType="multipart/form-data" method="post">
+                    <h1>Sign Up</h1>
+                    EMAIL : <input type="text" name="email"/><br/>
+                    PASSWORD : <input type="password" name="password"/><br/>
+                    <input type="submit"/>
+                </form>
+            </div>
             <div className="oauth-login">
                 <div className="kakao">
 
