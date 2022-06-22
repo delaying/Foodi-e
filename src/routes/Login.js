@@ -24,7 +24,7 @@ function Login() {
             </div>
             <div className="input-login">
                 <form action="/auth/signup" encType="multipart/form-data" method="post">
-                    <h1>Sign Up</h1>
+                    <h1>로그인</h1>
                     EMAIL : <input type="text" name="email"/><br/>
                     PASSWORD : <input type="password" name="password"/><br/>
                     <input type="submit"/>

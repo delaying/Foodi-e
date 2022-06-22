@@ -6,6 +6,7 @@ import {BsCamera} from "react-icons/bs";
 import {MdKeyboardArrowRight} from "react-icons/md";
 import './writePost.css';
 
+
 function WritePost({history}) {
     //사진등록
     const [myImage, setMyImage] = useState("");
@@ -26,6 +27,7 @@ function WritePost({history}) {
         //이전 페이지로 이동
         history.goBack();
     };
+
 
     return (
         <>
@@ -67,26 +69,15 @@ function WritePost({history}) {
                         </div>
 
                     </div>
-                    <div className="area-choice">
-                        <span className="category-choice-title">지역 선택</span>
-                        <div className="choice-top-button">
-                            <span className="area-first-choice">대전광역시</span>
-                            <span className="arrowRight-icon"><MdKeyboardArrowRight size={25}/></span>
-                            <span className="area-second-choice">유성구</span>
-                            <span className="arrowRight-icon"><MdKeyboardArrowRight size={25}/></span>
-                            <span className="area-third-choice">덕명동</span>
-                        </div>
-                    </div>
-                </div>
 
-                <div className="detail-choice">
-                    <p>세부사항</p>
-                    <div className="choice-button">
-                        <div className="top-line">
+                    <div className="detail-choice">
+                        <p>세부사항</p>
+                        <div className="choice-button">
+                            <div className="top-line">
                             <span>거래 장소
                                 <a href="">한밭대학교 N4동</a>
                             </span>
-                            <span>물품 개수
+                                <span>물품 개수
                                <select>
                                    <option>1</option>
                                    <option>2</option>
@@ -95,12 +86,12 @@ function WritePost({history}) {
                                    <option>5</option>
                                 </select>
                             </span>
-                        </div>
-                        <div className="bottom-line">
+                            </div>
+                            <div className="bottom-line">
                             <span>거래 시간
                                 <input type="datetime-local"/>
                             </span>
-                            <span>식품 보관 방법
+                                <span>식품 보관 방법
                             <select>
                                    <option>냉장 보관</option>
                                    <option>냉동 보관</option>
@@ -108,53 +99,53 @@ function WritePost({history}) {
                                    <option>기타</option>
                                 </select>
                             </span>
+                            </div>
                         </div>
+
+                    </div>
+                </div>
+
+
+                <div className="post-photo">
+
+                    <form method="post" encType="multiple/form-data">
+                        <div className="add-photo">
+                            <label htmlFor="chooseFile">
+                                <img src={myImage} alt=""/>
+                                <BsCamera size={40} color={'lightGray'}/>
+                                <p>사진을 등록해주세요</p>
+                            </label>
+                        </div>
+                        <input type="file" multiple="multiple" id="chooseFile" placeholder="사진을 등록해주세요"
+                               accept=".jpg,.jpeg,.png" onChange={addImage}/>
+                    </form>
+                    <p className="date-explanation">유통기한이 보이는 사진도 등록해주세요</p>
+                </div>
+                <div className="post-input-content">
+                    <input type="text" placeholder="설명을 등록해주세요"/>
+
+                </div>
+                <div className="post-precations">
+                    <ul>
+                        <li>상한 음식 또는 유통기한이 지난 음식을 공유할 경우 계정에 조치가
+                            취해질 수 있음을 알립니다.
+                        </li>
+                        <li>관련된 설명이 아닌 정치 사회 관련 행위, 홍보 및 판매 관련 행위를
+                            금지합니다.
+                        </li>
+                        <li>타인에게 불쾌감을 주는 행위, 범죄, 불법 행위를 금지합니다.</li>
+                        <li>욕설,비하,음란물 등의 행위를 금지합니다.</li>
+                    </ul>
+                    <div className="check-agree">
+                        <p>위 안내사항에 동의하나요? <input type="checkbox"/></p>
                     </div>
 
                 </div>
-            </div>
-
-
-            <div className="post-photo">
-
-                <form method="post" encType="multiple/form-data">
-                    <div className="add-photo">
-                        <label htmlFor="chooseFile">
-                            <img src={myImage} alt=""/>
-                            <BsCamera size={40} color={'lightGray'}/>
-                            <p>사진을 등록해주세요</p>
-                        </label>
-                    </div>
-                    <input type="file" multiple="multiple" id="chooseFile" placeholder="사진을 등록해주세요"
-                           accept=".jpg,.jpeg,.png" onChange={addImage}/>
-                </form>
-                <p className="date-explanation">유통기한이 보이는 사진도 등록해주세요</p>
-            </div>
-            <div className="post-input-content">
-                <input type="text" placeholder="설명을 등록해주세요"/>
 
             </div>
-            <div className="post-precations">
-                <ul>
-                    <li>상한 음식 또는 유통기한이 지난 음식을 공유할 경우 계정에 조치가
-                        취해질 수 있음을 알립니다.
-                    </li>
-                    <li>관련된 설명이 아닌 정치 사회 관련 행위, 홍보 및 판매 관련 행위를
-                        금지합니다.
-                    </li>
-                    <li>타인에게 불쾌감을 주는 행위, 범죄, 불법 행위를 금지합니다.</li>
-                    <li>욕설,비하,음란물 등의 행위를 금지합니다.</li>
-                </ul>
-                <div className="check-agree">
-                    <p>위 안내사항에 동의하나요? <input type="checkbox"/></p>
-                </div>
-
-            </div>
+            </>
+            )
+            }
 
 
-        </>
-    )
-}
-
-
-export default WritePost;
+            export default WritePost;
