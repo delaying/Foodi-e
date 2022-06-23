@@ -28,7 +28,7 @@ function DeskWritePost() {
 //시군구선택
     function categoryChange(e) {
         const state = document.getElementById("state");
-        let add=[];
+        let add;
 
         const gangwon = ["강릉시","동해시","삼척시","속초시","원주시","춘천시","태백시","고성군","양구군","양양군","영월군","인제군","정선군","철원군","평창군","홍천군","화천군","횡성군"];
         const gyeonggi = ["고양시","과천시","광명시","광주시","구리시","군포시","김포시","남양주시","동두천시","부천시","성남시","수원시","시흥시","안산시","안성시","안양시","양주시","오산시","용인시","의왕시","의정부시","이천시","파주시","평택시","포천시","하남시","화성시","가평군","양평군","여주군","연천군"];
@@ -96,6 +96,7 @@ function DeskWritePost() {
     return (
         <>
            <div className="desk-write-post">
+               <form action="">
 
                <div className="desk-write-header">
                    <div className="desk-write-main">
@@ -108,9 +109,11 @@ function DeskWritePost() {
                        <p>게시글 작성중...</p>
                    </div>
                    <div className="desk-write-complete">
-                       <button> <TiPencil size={20}/> 완료</button>
+                       <button type="submit"> <TiPencil size={20}/> 완료</button>
                    </div>
                </div>
+
+
 
                <div className="desk-write">
                    <div className="desk-write-input-title">
@@ -142,6 +145,7 @@ function DeskWritePost() {
                                    <div className="choice-top-button">
                                        <div className="search_boxes">
                                            <div className="search_box">
+                                               {/*onChange 함수안먹힘 { }로 바꿀것!*/}
                                                <select name="" id="" onChange="categoryChange(this)">
                                                    <option value>시/도 선택</option>
                                                    <option value="general01">강원</option>
@@ -183,6 +187,7 @@ function DeskWritePost() {
                    </div>
 
                </div>
+               </form>
 
                <div className="desk-write-alert">
                    <div className="desk-write-alert-text">
