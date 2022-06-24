@@ -108,7 +108,7 @@ function WritePost({history}) {
 
                 <div className="post-photo">
 
-                    <form method="post" encType="multiple/form-data">
+                    <form action="" method="post" encType="multiple/form-data">
                         <div className="add-photo">
                             <label htmlFor="chooseFile">
                                 <img src={myImage} alt=""/>
